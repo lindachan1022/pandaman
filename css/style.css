@@ -1,0 +1,113 @@
+body {
+    height:auto;
+    padding-top: 100px;
+    font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+/* Services content
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.services {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    color:#515151;
+    padding-bottom:30px;
+}
+.services h1 {
+    text-align: center;
+    font-size:36px;
+    margin:50px 0;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+/* Center align the text within the three columns below the carousel */
+.services .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services h2 {
+    font-weight: normal;
+    font-size:24px;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+.services .col-lg-4 p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size:13px;
+    line-height:2.3;
+}
+
+/* business content
+-------------------------------------------------- */
+.business {
+    width:100%;
+    overflow: hidden;
+    height:auto;
+    background:#cebdb2;
+    padding:100px 0;
+
+}
+.business h3 {
+    font-size:50px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-weight:normal;
+    color:#fff;
+    line-height:1;
+}
+.business p a {
+    color:#fff;
+    font-size:18px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    margin:10px 0;
+}
+.business p a:hover {
+    color:#fff;
+    opacity: 0.9;
+}
+.btn-primary-alt {
+    background: #009cff;
+    box-shadow: 0 3px #005e9b;
+    padding: 15px auto;
+    -webkit-transition: opacity 100ms ease-in-out;
+    -o-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+}
+
+/* case content
+-------------------------------------------------- */
+.case {
+    width:100%;
+    overflow: hidden;
+    height:auto;
+    padding:50px 0;
+
+}
+.case h3 {
+    font-size:36px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-weight:normal;
+    line-height:1;
+    text-align: center;
+}
+.nav-tabs {
+    border:none;
+    width:370px;
+    margin:0 auto;
+    padding:10px 0 50px 0;
+}
+.caseimg {
+    background:#fff;
+    padding:7px;
+}
+.caseimg a {
+    display: block;
+}
+.caseimg img {
+    background:#ccc;
+    max-width: 100%;
+    height:auto;
+}
+
+
+
