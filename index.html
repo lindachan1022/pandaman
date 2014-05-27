@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/font.css">
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -26,14 +26,13 @@
     <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <script src="js/panda.js"></script>
     <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
 
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,13 +45,13 @@
         </div>
         <div class="navbar-collapse collapse">
 
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="nav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="case.html">Case</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#case">Case</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </div><!--/.nav-collapse -->
@@ -61,7 +60,7 @@
 
 <!-- Carousel
 ================================================== -->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide clearfix" data-ride="carousel">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner container">
@@ -103,7 +102,7 @@
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="container services">
+<div class="container services clearfix target-fix" id="services">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
@@ -127,14 +126,20 @@
 
 </div>
 
-<div class="business">
+<!-- business
+================================================== -->
+
+<div class="business clearfix">
     <div class="container">
         <h3>Do you have any difficulties in<br /> e-commerce?</h3>
         <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Have a look at other business</a></p>
     </div>
 </div>
 
-<div class="case">
+<!-- case
+================================================== -->
+
+<div class="case clearfix" id="case">
     <div class="container">
         <h3>Case</h3>
         <div class="bs-example bs-example-tabs">
@@ -180,14 +185,293 @@
                         <div class="col-xs-6 col-md-3 caseimg"><a href="###"><img src="images/img.jpg" /></a> </div>
                     </div>
                 </div>
+                <div class="load"><a href="#">Load more</a></div>
             </div>
         </div>
 
     </div>
 </div>
 
+<!-- pricing
+================================================== -->
+<div class="pricing clearfix" id="pricing">
+    <div class="container">
+        <h3>Pricing table</h3>
+        <p>Standard Price</p>
+    </div>
+</div>
+
+<!-- price
+================================================== -->
+
+<div class="case price clearfix">
+    <div class="container">
+        <h3>Our Price</h3>
+        <div class="row price_c1">
+            <div class="col-md-4">
+                <div class="price_website">
+                    <h4>Standard Website</h4>
+                    <h5>HK$ 8,000/yearly</h5>
+                    <div>
+                        <p>HTML5 CSS3 Design</p>
+                        <p>1GB Hosting Service</p>
+                        <p>Basic Functions</p>
+                        <p>1GB Hosting Service</p>
+                        <p>2GB x 10 Mailbox</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price_website">
+                    <h4>E-Commerce website</h4>
+                    <h5>HK$ 23,000/yearly</h5>
+                    <div>
+                        <p>HTML5 CSS3 Design</p>
+                        <p>Online Shop System</p>
+                        <p>Payment Gateway</p>
+                        <p>10GB Cloud Hosting Service</p>
+                        <p>2GB x 50 Mailbox</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price_website">
+                    <h4>Custom Made Website</h4>
+                    <h5>Meet to Discuss</h5>
+                    <div>
+                        <p>HTML5 CSS3 Design</p>
+                        <p>Customized Website Functions</p>
+                        <p>Customized Payment </p>
+                        <p>Customized Cloud Server</p>
+                        <p>Customized Corporate Mailbox</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+
+        </div>
 
 
+        <div class="row price_c2">
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Website Hosting</h4>
+                    <h5 class="btn_black">HK$ 1,500/yearly</h5>
+                    <div>
+                        <p>Unlimited Traffic</p>
+                        <p>Unlimited IIS</p>
+                        <p>3GB Hosting Service</p>
+                        <p>7 x 24 Hours Support</p>
+                        <p>Free setting</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_white" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Cloud Server</h4>
+                    <h5 class="btn_green">HK$ 800/month</h5>
+                    <div>
+                        <p>2 x Intel E5620 2.4G</p>
+                        <p>2GB Memory</p>
+                        <p>40GB Drive</p>
+                        <p>2M Bandwidth</p>
+                        <p>1 x IP</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_green" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Apps</h4>
+                    <h5 class="btn_lgreen">IOS/Android</h5>
+                    <div>
+                        <p>1 x UI Design</p>
+                        <p>Custom Function</p>
+                        <p>Member system</p>
+                        <p>5GB Apps Hosting</p>
+                        <p>Free Upload To Appstore</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_lgreen" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="price_website elseweds">
+                    <h4>Brand Design</h4>
+                    <h5 class="btn_gwhite">Meet to Discuss</h5>
+                    <div>
+                        <p>Logo</p>
+                        <p>Product Catalog</p>
+                        <p>VIS Design</p>
+                        <p>Exhibition Design</p>
+                        <p>Packaging design</p>
+                    </div>
+                    <p><a class="btn btn-lg btn-primary-alt btn_black" href="#" role="button">Purchase</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- team
+================================================== -->
+<div class="pricing team clearfix">
+    <div class="container">
+        <h3>Our team</h3>
+        <p>We a professional and progressive tea</p>
+    </div>
+</div>
+
+<!-- about
+================================================== -->
+<div class="case about clearfix" id="about">
+    <div class="container">
+        <h3>About Us</h3>
+        <div class="row">
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Aaron<br /><span>CEO</span></h4>
+                <p>Curabitur congue libero mi, et lacinia sem blandit sit amet. Donec eu mi non magna rhoncus bibendum et eu dui. Nunc iaculis placerat sapien vel imperdiet. </p>
+            </div>
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Lawrence<br /><span>CMO</span></h4>
+                <p>Etiam pulvinar libero et scelerisque cursus. Sed eu nisl congue, gravida urna imperdiet, laoreet dolor. Morbi adipiscing neque erat, tincidunt
+                    porttitor est vestibulum ac.</p>
+            </div>
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Linda<br /><span>CD</span></h4>
+                <p>Donec at pulvinar dolor, et lobortis est. Phasellus nibh nisi, blandit non velit sit amet, pulvinar vehicula nulla.</p>
+            </div>
+            <div class="col-xs-6 col-md-3 aboutimg">
+                <img src="images/img.jpg" />
+                <h4>Harry<br /><span>CTO</span></h4>
+                <p>Mauris dignissim felis quis justo
+                    malesuada gravida. Sed quis neque condimentum, luctus augue in, dapibus sapien.</p>
+            </div>
+
+        </div>
+
+        <div class="skills">
+            <h6>OUR SKILLS</h6>
+            <div class="row">
+
+                <div class="col-md-3">.col-md-4</div>
+                <div class="col-md-2">.col-md-4</div>
+                <div class="col-md-2">.col-md-4</div>
+                <div class="col-md-2">.col-md-4</div>
+                <div class="col-md-3">.col-md-4</div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- sbanenr
+================================================== -->
+<div class="pricing sbanner clearfix">
+    <div class="container">
+        <h3>You looked OVER 6000 px</h3>
+        <p>That’s Great!</p>
+    </div>
+</div>
+
+<!-- contact
+================================================== -->
+<div class="case contact clearfix" id="contact">
+    <div class="container">
+        <h3>Contact Us</h3>
+        <div class="row" style="margin-top:50px;">
+            <div class="col-md-9 mail">
+                <h4>MAIL</h4>
+                <form class="form-inline" role="form">
+                    <div class="form-group fleft">
+                        <label class="sr-only">Name</label>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Mail</label>
+                        <input type="mail" class="form-control" placeholder="Mail">
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea class="input-xlarge" id="textarea" rows="6" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn_blue">Submit mail</button>
+                </form>
+            </div>
+            <div class="col-md-3 mail ctinfo">
+                <h4>MORE INFO</h4>
+                <ul>
+                    <li>(852) 2267 8612</li>
+                    <li>info@pandaman.hk</li>
+                    <li>skype: username</li>
+                </ul>
+                <p>Unit 01D-5B 23/f<br />
+                    Nan Fung Tseun Wan, HK</p>
+                <button type="submit" class="btn btn_blue">Map</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- followus
+================================================== -->
+<div class="pricing follow clearfix">
+    <div class="container">
+        <h3>Connect with us</h3>
+        <p>Follow Us On Social Networks</p>
+        <ul>
+            <li><a class="icon-github"></a></li>
+            <li><a class="icon-flickr"></a></li>
+            <li><a class="icon-vimeo"></a></li>
+            <li><a class="icon-twitter"></a></li>
+            <li><a class="icon-facebook"></a></li>
+            <li><a class="icon-googleplus"></a></li>
+            <li><a class="icon-pinterest"></a></li>
+            <li><a class="icon-tumblr"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- footer
+================================================== -->
+<footer id="footer">
+    <div id="bottom-footer" class="container">
+        <div class="pull-left">
+            <a href="index.html"><img src="images/logo.png" style="height:50px;" /></a>
+        </div>
+        <div class="pull-right">
+            <p>Copyright © 2014 Pandaman.hk<br /><em>Statistical Design:S-lin</em></p>
+        </div>
+    </div><!-- bottom-footer -->
+</footer>
+
+
+<script>
+    window.onload=function(){
+        var oBtn=document.querySelector("#nav");
+        var aA=oBtn.querySelectorAll("a");
+        for(var i=0;i<aA.length;i++) {
+            aA[i].onclick=function(ev){
+                var ev= ev || window.event;
+                var id=this.hash;
+                var thisId=document.querySelector(id);
+                document.documentElement.scrollTop=document.body.scrollTop = thisId.offsetTop-oBtn.offsetHeight;
+                ev.preventDefault();
+            }
+        }
+
+    }
+</script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
