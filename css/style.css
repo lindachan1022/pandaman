@@ -99,13 +99,14 @@ body {
 .caseimg {
     background:#fff;
     padding:7px;
+    position: relative;
+
 }
 .caseimg a {
     display: block;
     text-align: left;
     width: 100%;
     height: 100%;
-    position: relative;
 }
 .caseimg img:hover {
     background:#f00;
@@ -115,6 +116,7 @@ body {
     background:#ccc;
     max-width: 100%;
     height:auto;
+    position: relative;
 }
 .load {
     width:100%;
@@ -124,6 +126,32 @@ body {
 .load a {
     color:#464646;
 }
+
+.hovertext {
+    max-width: 100%;
+    background: #000;
+    color:#fff;
+    text-align: center;
+    position: absolute;
+    left:0px;top:0px;
+
+
+}
+.hovertext h6 {
+    font-size:18px;
+    padding-top:50px;
+}
+.hovertext p {
+    font-size:14px;
+    padding-bottom:30px;
+}
+.hovertext span {
+    font-size:14px;
+}
+
+.caseimg {position:relative; float:left; width: 200px; height:200px; margin:15px;padding:20px;
+    background:#e8f5fe; overflow:hidden; cursor:pointer;}
+.caseimg img{position:absolute; top:0; left:0}
 
 
 
@@ -242,6 +270,7 @@ body {
 }
 .about {
     text-align: center;
+    padding-bottom:60px;
 }
 .aboutimg {
     background:#fff;
@@ -267,10 +296,11 @@ body {
     font-size:13px;
     font-family: "微软雅黑", Arial, sans-serif;
     color:#818181;
+    margin-bottom:30px;
 }
 .skills {
     width:100%;
-    background:url("../images/skillsline.jpg") repeat-x left center;
+    background:url("../images/skillsline.jpg") repeat-x top center;
     margin-top:20px;
 }
 .skills h6 {
@@ -280,14 +310,35 @@ body {
     line-height:1;
     color: #404040;
     width:180px;
-    padding:30px 0;
+    padding:0;
     background:#f00;
     background:#fff;
-    margin:0 auto;
+    margin:30px auto;
 }
+.skills .percentBox{
+    width: 145px;
+    height: 73px;
+    position: relative;
+}
+.skills .pertxt {
+    width: 145px;
+    position: absolute;
+    margin-top: -25px;
+    text-align: center;
+    color: #404040;
+    font-size: 24px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-weight: bold;
 
-
-
+}
+.skills p {
+    font-size:13px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    color: #404040;
+    text-transform:uppercase;
+    padding:10px 0;
+}
+.sper {margin:20px 13px;padding:0 28px;}
 
 /* contact content
 -------------------------------------------------- */
@@ -373,3 +424,5 @@ body {
     font-family: "微软雅黑", Arial, sans-serif;
     padding:10px 0;
 }
+
+

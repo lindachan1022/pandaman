@@ -27,6 +27,7 @@
     <![endif]-->
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/panda.js"></script>
 </head>
 
 <body>
@@ -185,7 +186,8 @@
                         <div class="col-xs-6 col-md-3 caseimg"><a href="###"><img src="images/img.jpg" /></a> </div>
                     </div>
                 </div>
-                <div class="load"><a href="#">Load more</a></div>
+
+                <a href="javascript:" class="loadMeinvMOre load" id="loadMeinvMOre">加载更多</a>
             </div>
         </div>
 
@@ -360,11 +362,41 @@
             <h6>OUR SKILLS</h6>
             <div class="row">
 
-                <div class="col-md-3">.col-md-4</div>
-                <div class="col-md-2">.col-md-4</div>
-                <div class="col-md-2">.col-md-4</div>
-                <div class="col-md-2">.col-md-4</div>
-                <div class="col-md-3">.col-md-4</div>
+                <div class="col-xs-4 col-md-2 sper">
+                    <div class="percentBox">
+                        <div id="bg"><img src="images/percent1.png" /></div>
+                        <div id="txt" class="pertxt">35%</div>
+                        <p>graphic design</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+                    <div class="percentBox">
+                        <div id="bg"><img src="images/percent2.png" /></div>
+                        <div id="txt" class="pertxt">85%</div>
+                        <p>web-design</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+                    <div class="percentBox">
+                        <div id="bg"><img src="images/percent3.png" /></div>
+                        <div id="txt" class="pertxt">95%</div>
+                        <p>UI-DESIGN</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+                    <div class="percentBox">
+                        <div id="bg"><img src="images/percent4.png" /></div>
+                        <div id="txt" class="pertxt">25%</div>
+                        <p>photography</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 sper">
+                    <div class="percentBox">
+                        <div id="bg"><img src="images/percent5.png" /></div>
+                        <div id="txt" class="pertxt">50%</div>
+                        <p>program</p>
+                    </div>
+                </div>
 
             </div>
 
@@ -456,22 +488,6 @@
 </footer>
 
 
-<script>
-    window.onload=function(){
-        var oBtn=document.querySelector("#nav");
-        var aA=oBtn.querySelectorAll("a");
-        for(var i=0;i<aA.length;i++) {
-            aA[i].onclick=function(ev){
-                var ev= ev || window.event;
-                var id=this.hash;
-                var thisId=document.querySelector(id);
-                document.documentElement.scrollTop=document.body.scrollTop = thisId.offsetTop-oBtn.offsetHeight;
-                ev.preventDefault();
-            }
-        }
-
-    }
-</script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
